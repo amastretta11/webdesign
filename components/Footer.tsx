@@ -24,7 +24,6 @@ export default function Footer() {
           LinkedIn
         </a>
       </div>
-      <span className="text-[12px] tracking-[-0.1px]">built with curiosity</span>
     </footer>
   );
 }
