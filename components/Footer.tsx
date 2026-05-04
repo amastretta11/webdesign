@@ -12,7 +12,7 @@ export default function Footer() {
           href="mailto:amastretta@hotmail.com"
           className="hover:text-white transition-colors"
         >
-          amastretta@hotmail.com
+          Email
         </a>
         <span className="text-white/20">·</span>
         <a
