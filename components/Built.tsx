@@ -57,16 +57,16 @@ function ProjectCard({
   return (
     <article
       data-project-card
-      className="group relative flex flex-col rounded-[18px] border border-hairline bg-white p-7 transition-all duration-300 hover:border-[#c0c0c0] hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.18)]"
+      className="group relative flex flex-col rounded-[18px] border border-hairline bg-white p-6 transition-all duration-300 hover:border-[#c0c0c0] hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.18)]"
     >
-      <p className="text-[11px] tracking-[0.3px] text-muted mb-3.5">
+      <p className="text-[11px] tracking-[0.3px] text-muted mb-2.5">
         {String(index + 1).padStart(2, "0")}
       </p>
-      <p className="font-display text-[21px] font-semibold leading-[1.2] mb-2.5 text-ink">
+      <p className="font-display text-[20px] font-semibold leading-[1.2] mb-2 text-ink">
         {project.title}
       </p>
-      <p className="text-[14px] text-muted tracking-tight2 leading-[1.5]">{project.sub}</p>
-      <p className="text-[15px] leading-[1.55] text-[#333] tracking-tight2 mt-4 flex-1">
+      <p className="text-[13px] text-muted tracking-tight2 leading-[1.5]">{project.sub}</p>
+      <p className="text-[14px] leading-[1.55] text-[#333] tracking-tight2 mt-3 flex-1">
         {project.desc}
       </p>
 
@@ -103,30 +103,16 @@ function ProjectCard({
         </p>
       )}
 
-      <div className="flex items-center justify-between mt-4 flex-wrap gap-2">
-        <div className="flex flex-wrap gap-2">
-          {project.chips.map((c) => (
-            <span
-              key={c}
-              className="text-[12px] px-3 py-1 rounded-full border border-hairline text-ink tracking-[-0.1px]"
-            >
-              {c}
-            </span>
-          ))}
-        </div>
-        <div className="flex items-center gap-2.5">
-          {project.link && (
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[13px] text-brand hover:underline"
-            >
-              Visit →
-            </a>
-          )}
-        </div>
-      </div>
+      {project.link && (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[13px] text-brand hover:underline mt-4 self-start"
+        >
+          Visit →
+        </a>
+      )}
 
       <span
         aria-hidden

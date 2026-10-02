@@ -54,7 +54,7 @@ export default function Hero() {
         <p
           data-tag
           className="font-display italic text-ink leading-[1.3] tracking-normal"
-          style={{ fontSize: "clamp(18px, 2vw, 24px)" }}
+          style={{ fontSize: "clamp(15px, 1.5vw, 20px)" }}
         >
           Currently building in frontier AI security at{" "}
           <a
