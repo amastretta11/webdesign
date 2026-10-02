@@ -31,13 +31,6 @@ export default function Contact() {
         delay: 0.25,
         scrollTrigger: { trigger: ref.current, start: "top 80%" },
       });
-      gsap.from("[data-contact-meta]", {
-        y: 10,
-        opacity: 0,
-        duration: 0.7,
-        delay: 0.4,
-        scrollTrigger: { trigger: ref.current, start: "top 80%" },
-      });
     }, ref);
     return () => ctx.revert();
   }, []);
@@ -46,18 +39,19 @@ export default function Contact() {
     <section id="contact" ref={ref} className="py-12 px-8">
       <div className="max-w-[1200px] mx-auto">
         <div data-contact-label>
-          <SectionLabel title="Say hi" />
+          <SectionLabel title="Please say hi!" />
         </div>
-        <p
+        <div
           data-contact-body
-          className="text-[17px] font-light leading-[1.45] text-ink tracking-tight2 max-w-[640px] mb-10"
+          className="text-[17px] font-light leading-[1.45] text-ink tracking-tight2 max-w-[640px] mb-10 space-y-4"
         >
-          I like talking to people building things they really care about.
-          <br />
-          I&apos;m especially interested in how AI shows up in the physical world.
-          <br />
-          If you&apos;re in Menlo Park, I&apos;ll make you matcha.
-        </p>
+          <p>
+            I love hearing from people, so please reach out! Right now I&apos;m mostly thinking about frontier AI security and cyber.
+          </p>
+          <p>
+            Currently based in Menlo Park, but spend most of my time in San Francisco. Always down to make you matcha.
+          </p>
+        </div>
         <div className="flex flex-wrap gap-4">
           <a
             data-contact-link
@@ -76,12 +70,6 @@ export default function Contact() {
             LinkedIn →
           </a>
         </div>
-        <p
-          data-contact-meta
-          className="mt-16 text-[13px] text-muted italic tracking-[-0.1px]"
-        >
-          Menlo Park, CA · PST timezone · coffee order: 5g matcha, oat milk, light sweetener
-        </p>
       </div>
     </section>
   );
