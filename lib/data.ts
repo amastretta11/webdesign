@@ -102,7 +102,7 @@ export const EXPERIENCE: Experience[] = [
     location: "New Haven, CT",
     period: "2021–2025",
     role: "B.A. Economics & Statistics",
-    group: "cum laude · Distinction in Major",
+    group: "Cum laude · Distinction in Major",
     bullets: [],
   },
 ];
