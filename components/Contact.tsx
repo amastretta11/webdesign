@@ -69,6 +69,15 @@ export default function Contact() {
           >
             LinkedIn →
           </a>
+          <a
+            data-contact-link
+            href="https://x.com/amastretta1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-[15px] text-brand tracking-tight2 hover:opacity-70 hover:underline transition-opacity"
+          >
+            X →
+          </a>
         </div>
       </div>
     </section>
