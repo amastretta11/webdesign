@@ -51,7 +51,7 @@ export default function Hero() {
         <div className="max-w-[860px]">
           <p
             data-tag
-            className="font-display italic text-ink leading-[1.5] tracking-normal text-[17px]"
+            className="font-display italic text-ink leading-[1.5] tracking-normal text-[18px]"
           >
             Currently building in frontier AI security at{" "}
             <a
@@ -66,7 +66,7 @@ export default function Hero() {
           </p>
           <p
             data-bio
-            className="mt-4 text-[17px] leading-[1.5] text-[#444] tracking-tight4"
+            className="mt-4 text-[18px] leading-[1.5] text-[#444] tracking-tight4"
           >
             <span className="block sm:inline">
               Previously at Centerview and McKinsey
