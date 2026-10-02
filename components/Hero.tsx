@@ -24,18 +24,10 @@ export default function Hero() {
           "-=0.5"
         )
         .from(
-          "[data-bio]",
-          { y: 12, opacity: 0, duration: 0.7, ease: "power3.out" },
+          "[data-bio] > *",
+          { y: 12, opacity: 0, duration: 0.7, stagger: 0.08, ease: "power3.out" },
           "-=0.6"
         );
-
-      // Subtle scroll cue fade-out
-      gsap.to("[data-scroll-cue]", {
-        opacity: 0,
-        y: -6,
-        ease: "none",
-        scrollTrigger: { trigger: root.current, start: "top top", end: "+=160", scrub: true },
-      });
     }, root);
     return () => ctx.revert();
   }, []);
@@ -58,29 +50,21 @@ export default function Hero() {
           ))}
         </span>
       </h1>
-      <div className="max-w-[520px]">
+      <div className="max-w-[620px]">
         <p
           data-tag
           className="font-display italic text-ink leading-[1.3] tracking-normal"
           style={{ fontSize: "clamp(20px, 2.5vw, 28px)" }}
         >
-          Figuring out what&apos;s next for me.
+          Currently building in frontier AI security at General Analysis.
         </p>
-        <p
+        <div
           data-bio
-          className="text-[17px] leading-[1.6] text-[#444] tracking-tight4 mt-3"
+          className="mt-4 text-[17px] leading-[1.6] text-[#444] tracking-tight4 space-y-1"
         >
-          Currently @ Centerview.
-        </p>
-      </div>
-
-      <div
-        data-scroll-cue
-        aria-hidden
-        className="hidden md:flex absolute right-8 bottom-3 items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted"
-      >
-        Scroll
-        <span className="block h-px w-8 bg-muted/60" />
+          <p>Previously at Centerview and McKinsey.</p>
+          <p>Matcha enthusiast.</p>
+        </div>
       </div>
     </section>
   );

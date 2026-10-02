@@ -4,12 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Andrea Mastretta",
   description:
-    "Andrea Mastretta — Tech M&A Analyst at Centerview, founder of Matchatretta and Yale Undergraduate Capital Partners. Figuring out what's next.",
+    "Andrea Mastretta — building in frontier AI security at General Analysis. Previously at Centerview and McKinsey. Founder of Matchatretta and Yale Undergraduate Capital Partners.",
   metadataBase: new URL("https://example.com"),
   openGraph: {
     title: "Andrea Mastretta",
     description:
-      "Tech M&A Analyst at Centerview. Founder of Matchatretta and Yale Undergraduate Capital Partners.",
+      "Building in frontier AI security at General Analysis. Previously Centerview and McKinsey.",
     type: "website",
   },
 };
