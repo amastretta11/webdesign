@@ -50,18 +50,18 @@ export default function Hero() {
           ))}
         </span>
       </h1>
-      <div className="max-w-[620px]">
+      <div className="max-w-[860px]">
         <p
           data-tag
           className="font-display italic text-ink leading-[1.3] tracking-normal"
-          style={{ fontSize: "clamp(20px, 2.5vw, 28px)" }}
+          style={{ fontSize: "clamp(18px, 2vw, 24px)" }}
         >
           Currently building in frontier AI security at{" "}
           <a
             href="https://generalanalysis.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline decoration-ink/20 underline-offset-[6px] hover:decoration-ink transition-colors"
+            className="underline decoration-ink/20 underline-offset-[6px] hover:decoration-ink transition-colors whitespace-nowrap"
           >
             General Analysis
           </a>
