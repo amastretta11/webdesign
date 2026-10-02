@@ -70,6 +70,34 @@ export default function Contact() {
             LinkedIn →
           </a>
         </div>
+        <p className="mt-16 text-[13px] text-muted italic tracking-[-0.1px] leading-[1.6]">
+          Menlo Park, CA · Pacific Time ·{" "}
+          <svg
+            aria-hidden="true"
+            width="14"
+            height="14"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.1"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="inline-block align-[-0.15em] mr-[3px]"
+          >
+            <ellipse cx="8" cy="6.5" rx="5.5" ry="1" />
+            <path d="M2.5,6.5 Q3.2,12.5 8,13 Q12.8,12.5 13.5,6.5" />
+          </svg>
+          Matcha Order: 5g matcha (Favorite:{" "}
+          <a
+            href="https://global.ippodo-tea.co.jp/collections/matcha/products/matcha5010131"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-muted/40 underline-offset-2 hover:text-ink hover:decoration-ink/60 transition-colors"
+          >
+            Ummon by Ippodo
+          </a>
+          ), oat milk, light sweetener
+        </p>
       </div>
     </section>
   );
