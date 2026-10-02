@@ -56,7 +56,16 @@ export default function Hero() {
           className="font-display italic text-ink leading-[1.3] tracking-normal"
           style={{ fontSize: "clamp(20px, 2.5vw, 28px)" }}
         >
-          Currently building in frontier AI security at General Analysis.
+          Currently building in frontier AI security at{" "}
+          <a
+            href="https://generalanalysis.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-ink/20 underline-offset-[6px] hover:decoration-ink transition-colors"
+          >
+            General Analysis
+          </a>
+          .
         </p>
         <div
           data-bio
