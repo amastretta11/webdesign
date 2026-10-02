@@ -68,8 +68,11 @@ export default function Hero() {
             data-bio
             className="mt-4 text-[17px] leading-[1.5] text-[#444] tracking-tight4"
           >
-            Previously at Centerview and McKinsey{" "}
-            <span className="text-muted mx-1">·</span> Matcha enthusiast
+            <span className="block sm:inline">
+              Previously at Centerview and McKinsey
+            </span>
+            <span className="hidden sm:inline text-muted mx-1">·</span>
+            <span className="block sm:inline">Matcha enthusiast</span>
           </p>
         </div>
       </div>
