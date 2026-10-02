@@ -62,9 +62,18 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
+    company: "General Analysis",
+    location: "San Francisco, CA",
+    period: "Oct 2026 – Present",
+    role: "Chief of Staff",
+    bullets: [
+      "Working on understanding and securing increasingly capable AI systems.",
+    ],
+  },
+  {
     company: "Centerview Partners",
     location: "Menlo Park, CA",
-    period: "Jul 2025 – Present",
+    period: "Jul 2025 – Sep 2026",
     role: "Investment Banking Analyst",
     group: "Technology Group",
     bullets: ["Figuring out how not to bankrupt a business."],
