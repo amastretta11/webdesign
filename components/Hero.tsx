@@ -24,8 +24,8 @@ export default function Hero() {
           "-=0.5"
         )
         .from(
-          "[data-bio] > *",
-          { y: 12, opacity: 0, duration: 0.7, stagger: 0.08, ease: "power3.out" },
+          "[data-bio]",
+          { y: 12, opacity: 0, duration: 0.7, ease: "power3.out" },
           "-=0.6"
         );
     }, root);
@@ -67,13 +67,13 @@ export default function Hero() {
           </a>
           .
         </p>
-        <div
+        <p
           data-bio
-          className="mt-4 text-[17px] leading-[1.6] text-[#444] tracking-tight4 space-y-1"
+          className="mt-4 text-[17px] leading-[1.6] text-[#444] tracking-tight4"
         >
-          <p>Previously at Centerview and McKinsey.</p>
-          <p>Matcha enthusiast.</p>
-        </div>
+          Previously at Centerview and McKinsey{" "}
+          <span className="text-muted mx-1">·</span> Matcha enthusiast
+        </p>
       </div>
     </section>
   );
