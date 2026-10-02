@@ -64,7 +64,7 @@ export default function Nav() {
         <button
           data-nav-item
           onClick={() => scrollTo("contact")}
-          className="text-[13px] text-white bg-brand hover:bg-brand/85 transition-colors duration-150 rounded-full px-4 py-[7px] border-0 cursor-pointer"
+          className="text-[13px] tracking-[-0.1px] text-white/65 hover:text-white transition-colors duration-150 bg-transparent border-0 cursor-pointer"
         >
           Say hi
         </button>
