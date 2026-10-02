@@ -53,7 +53,7 @@ export default function Experience() {
               } ${i !== EXPERIENCE.length - 1 ? "border-b border-hairline" : ""}`}
             >
               <div className="flex flex-col gap-1">
-                <span className="font-display text-[20px] font-semibold text-ink leading-[1.2] tracking-normal">
+                <span className="font-display text-[19px] font-semibold text-ink leading-[1.25] tracking-normal">
                   {item.company}
                 </span>
                 {item.location && (
@@ -64,25 +64,25 @@ export default function Experience() {
                 <span className="text-[12px] text-muted tracking-[-0.1px]">{item.period}</span>
               </div>
               <div>
+                <p className="font-display text-[19px] font-medium leading-[1.25] mb-2 text-ink tracking-normal">
+                  {item.role}
+                </p>
                 {item.group && item.group.includes("·") ? (
-                  <div className="mb-2">
+                  <div className="mb-2.5">
                     {item.group.split("·").map((g, j) => (
                       <p
                         key={j}
-                        className="font-display text-[16px] font-normal text-ink/85 leading-[1.4] tracking-[-0.1px]"
+                        className="text-[13px] text-muted tracking-[-0.1px] leading-[1.6]"
                       >
                         {g.trim()}
                       </p>
                     ))}
                   </div>
                 ) : item.group ? (
-                  <p className="font-display text-[16px] font-normal text-ink/85 leading-[1.4] tracking-[-0.1px] mb-2">
+                  <p className="text-[13px] text-muted tracking-[-0.1px] mb-2.5">
                     {item.group}
                   </p>
                 ) : null}
-                <p className="text-[15px] font-medium text-muted leading-[1.4] tracking-[-0.1px] mb-2">
-                  {item.role}
-                </p>
                 {item.bullets.map((b, j) => (
                   <p
                     key={j}

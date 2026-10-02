@@ -66,7 +66,6 @@ export const EXPERIENCE: Experience[] = [
     location: "San Francisco, CA",
     period: "Oct 2026 – Present",
     role: "Chief of Staff",
-    group: "Frontier AI Security",
     bullets: [
       "Working on understanding and securing increasingly capable AI systems.",
     ],
