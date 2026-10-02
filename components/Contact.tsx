@@ -46,7 +46,7 @@ export default function Contact() {
     <section id="contact" ref={ref} className="py-12 px-8">
       <div className="max-w-[1200px] mx-auto">
         <div data-contact-label>
-          <SectionLabel num="04" title="Say hi" />
+          <SectionLabel title="Say hi" />
         </div>
         <p
           data-contact-body

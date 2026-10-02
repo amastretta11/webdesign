@@ -41,7 +41,7 @@ export default function Reading() {
     >
       <div className="max-w-[1200px] mx-auto">
         <div data-reading-label>
-          <SectionLabel num="03" title="What I'm reading" dark />
+          <SectionLabel title="What I'm reading" dark />
         </div>
         <div
           className="grid gap-6"

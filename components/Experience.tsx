@@ -41,7 +41,7 @@ export default function Experience() {
     <section id="experience" ref={ref} className="bg-parchment py-12 px-8">
       <div className="max-w-[1200px] mx-auto">
         <div data-exp-label>
-          <SectionLabel num="02" title="Experience" />
+          <SectionLabel title="Experience" />
         </div>
         <div className="max-w-[860px]">
           {EXPERIENCE.map((item, i) => (
