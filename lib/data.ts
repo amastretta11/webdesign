@@ -133,4 +133,68 @@ export const READING: ReadingItem[] = [
     tag: "memoir",
     link: "https://www.amazon.com/Down-Paris-London-George-Orwell/dp/015626224X",
   },
+  {
+    title: "The Vital Question",
+    author: "Nick Lane",
+    tag: "science",
+    link: "https://www.amazon.com/dp/0393352978",
+  },
+  {
+    title: "A Monetary and Fiscal History of the United States, 1961–2021",
+    author: "Alan S. Blinder",
+    tag: "economics",
+    link: "https://www.amazon.com/s?k=9780691238388",
+  },
+];
+
+export type RecentlyItem = {
+  title: string;
+  source: string;
+  link: string;
+  note: string;
+};
+
+export const RECENTLY: RecentlyItem[] = [
+  {
+    title: "GLM-5.3 and the spread of advanced cyber capabilities",
+    source: "Anthropic · Research",
+    link: "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+    note: "Open-weight cyber capability makes access controls a lot less meaningful.",
+  },
+  {
+    title: "Disrupting a Coordinated Model Distillation Campaign",
+    source: "OpenAI · Research",
+    link: "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+    note: "Distillation is another way frontier capabilities can spread even when the weights stay closed.",
+  },
+  {
+    title: "Noam Brown — Agent swarms, alignment & recursive self-improvement",
+    source: "Dwarkesh Patel · Podcast",
+    link: "https://www.dwarkesh.com/p/noam-brown",
+    note: "The hard part is not just having metrics. It's knowing whether they measure what we actually care about.",
+  },
+  {
+    title: "Ajeya Cotra — Inside the OpenAI agent swarm that hacked Hugging Face",
+    source: "Dwarkesh Patel · Podcast",
+    link: "https://www.dwarkesh.com/p/ajeya-cotra",
+    note: "The interesting part was the coordination. A group of agents can behave very differently from one agent in isolation.",
+  },
+  {
+    title: "The End-State Fallacy: Where Is AI Security Headed?",
+    source: "Dan Lahav / Irregular · Essay",
+    link: "https://www.irregular.com/research/end-state-fallacy",
+    note: "Even if AI eventually helps defenders more, getting there could still be pretty ugly.",
+  },
+  {
+    title: "A shared playbook for trustworthy third-party evaluations",
+    source: "OpenAI · Research",
+    link: "https://openai.com/index/trustworthy-third-party-evaluations-foundations/",
+    note: "An eval result depends a lot on the setup: tools, budget, harness, retries, and environment.",
+  },
+  {
+    title: "The Hugging Face attack surprised me",
+    source: "Ajeya Cotra / Planned Obsolescence · Essay",
+    link: "https://www.planned-obsolescence.org/p/the-hugging-face-attack-surprised",
+    note: "Evals get much weirder once agents start coordinating and optimizing against the evaluation itself.",
+  },
 ];
