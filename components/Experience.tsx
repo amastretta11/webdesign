@@ -48,23 +48,23 @@ export default function Experience() {
             <div
               key={item.company}
               data-exp-item
-              className={`grid grid-cols-1 md:grid-cols-[180px_1fr] gap-6 items-start py-7 ${
+              className={`grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6 items-start py-7 ${
                 i === 0 ? "pt-0" : ""
               } ${i !== EXPERIENCE.length - 1 ? "border-b border-hairline" : ""}`}
             >
               <div className="flex flex-col gap-1">
-                <span className="text-[13px] font-semibold text-ink tracking-[-0.1px]">
+                <span className="font-display text-[19px] font-semibold text-ink leading-[1.25] tracking-normal">
                   {item.company}
                 </span>
                 {item.location && (
-                  <span className="text-[12px] text-muted tracking-[-0.1px]">
+                  <span className="text-[12px] text-muted tracking-[-0.1px] mt-1">
                     {item.location}
                   </span>
                 )}
                 <span className="text-[12px] text-muted tracking-[-0.1px]">{item.period}</span>
               </div>
               <div>
-                <p className="font-display text-[19px] font-semibold leading-[1.2] mb-2 text-ink">
+                <p className="font-display text-[19px] font-medium leading-[1.25] mb-2 text-ink tracking-normal">
                   {item.role}
                 </p>
                 {item.group && item.group.includes("·") ? (
