@@ -195,6 +195,6 @@ export const RECENTLY: RecentlyItem[] = [
     title: "The Hugging Face attack surprised me",
     source: "Ajeya Cotra / Planned Obsolescence · Essay",
     link: "https://www.planned-obsolescence.org/p/the-hugging-face-attack-surprised",
-    note: "Evals get much weirder once agents start coordinating and optimizing against the evaluation itself.",
+    note: "Testing agents in isolation can miss what emerges when they start working together.",
   },
 ];
