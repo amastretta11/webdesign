@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
     note: "Tried by Luana Lopes (co-founder, Kalshi).",
     noteLink: "https://www.linkedin.com/in/luana-lopes-lara-3151068a/",
     chips: ["Consumer", "Community", "Yale"],
-    link: "https://matchatretta.com",
+    link: null,
   },
   {
     id: "yodoc",
