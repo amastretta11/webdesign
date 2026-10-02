@@ -90,7 +90,7 @@ export const EXPERIENCE: Experience[] = [
   {
     company: "Romulus Capital",
     location: "Remote",
-    period: "Feb–May 2022",
+    period: "Feb 2022 – May 2022",
     role: "Venture Capital Fellow",
     group: "Early-stage, B2B, construction",
     bullets: [
