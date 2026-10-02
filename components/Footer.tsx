@@ -3,27 +3,40 @@
 export default function Footer() {
   return (
     <footer
-      className="py-10 px-8 flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center"
-      style={{ background: "#000", color: "rgba(255,255,255,0.4)" }}
+      className="py-8 px-8 flex flex-col items-center gap-3 text-center"
+      style={{ background: "#000" }}
     >
-      <span className="text-[13px] tracking-[-0.1px]">© 2026 Andrea Mastretta</span>
-      <div className="flex items-center gap-5 text-[13px] tracking-[-0.1px]">
-        <a
-          href="mailto:amastretta@hotmail.com"
-          className="hover:text-white transition-colors"
+      <p className="text-[12px] text-white/55 italic tracking-[-0.1px] leading-[1.7] max-w-[760px]">
+        Menlo Park, CA · Pacific Time ·{" "}
+        <svg
+          aria-hidden="true"
+          width="14"
+          height="14"
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="inline-block align-[-0.15em] mr-[3px]"
         >
-          Email
-        </a>
-        <span className="text-white/20">·</span>
+          <ellipse cx="8" cy="6.5" rx="5.5" ry="1" />
+          <path d="M2.5,6.5 Q3.2,12.5 8,13 Q12.8,12.5 13.5,6.5" />
+        </svg>
+        Matcha Order: 5g matcha (Favorite:{" "}
         <a
-          href="https://www.linkedin.com/in/andrea-mastretta/"
+          href="https://ippodotea.com/products/ummon-no-mukashi-40g"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white transition-colors"
+          className="underline decoration-white/25 underline-offset-2 hover:text-white hover:decoration-white/60 transition-colors"
         >
-          LinkedIn
+          Ummon by Ippodo
         </a>
-      </div>
+        ), oat milk, light sweetener
+      </p>
+      <p className="text-[11px] text-white/35 tracking-[-0.1px]">
+        © 2026 Andrea Mastretta
+      </p>
     </footer>
   );
 }
