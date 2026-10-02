@@ -51,8 +51,7 @@ export default function Hero() {
         <div className="max-w-[860px]">
           <p
             data-tag
-            className="font-display italic text-ink leading-[1.3] tracking-normal"
-            style={{ fontSize: "clamp(15px, 1.5vw, 20px)" }}
+            className="font-display italic text-ink leading-[1.5] tracking-normal text-[17px]"
           >
             Currently building in frontier AI security at{" "}
             <a
@@ -67,7 +66,7 @@ export default function Hero() {
           </p>
           <p
             data-bio
-            className="mt-4 text-[17px] leading-[1.6] text-[#444] tracking-tight4"
+            className="mt-4 text-[17px] leading-[1.5] text-[#444] tracking-tight4"
           >
             Previously at Centerview and McKinsey{" "}
             <span className="text-muted mx-1">·</span> Matcha enthusiast
