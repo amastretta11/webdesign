@@ -64,7 +64,7 @@ export default function Experience() {
                 <span className="text-[12px] text-muted tracking-[-0.1px]">{item.period}</span>
               </div>
               <div>
-                <p className="font-display text-[19px] font-medium leading-[1.25] mb-2 text-ink tracking-normal">
+                <p className="font-display italic text-[19px] font-medium leading-[1.25] mb-2 text-ink tracking-normal">
                   {item.role}
                 </p>
                 {item.group && item.group.includes("·") ? (
