@@ -38,8 +38,8 @@ export default function Built() {
           <SectionLabel title={<>Some things I&apos;ve built</>} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {PROJECTS.map((p) => (
-            <ProjectCard key={p.id} project={p} />
+          {PROJECTS.map((p, i) => (
+            <ProjectCard key={p.id} project={p} index={i} />
           ))}
         </div>
       </div>
@@ -49,14 +49,19 @@ export default function Built() {
 
 function ProjectCard({
   project,
+  index,
 }: {
   project: Project;
+  index: number;
 }) {
   return (
     <article
       data-project-card
       className="group relative flex flex-col rounded-[18px] border border-hairline bg-white p-6 transition-all duration-300 hover:border-[#c0c0c0] hover:-translate-y-0.5 hover:shadow-[0_18px_40px_-24px_rgba(0,0,0,0.18)]"
     >
+      <p className="text-[11px] tracking-[0.3px] text-muted mb-2.5">
+        {String(index + 1).padStart(2, "0")}
+      </p>
       <p className="font-display text-[20px] font-semibold leading-[1.2] mb-2 text-ink">
         {project.title}
       </p>
