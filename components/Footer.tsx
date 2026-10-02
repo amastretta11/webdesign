@@ -3,10 +3,10 @@
 export default function Footer() {
   return (
     <footer
-      className="py-8 px-8 flex flex-col items-center gap-3 text-center"
+      className="py-8 px-8 flex flex-col gap-3"
       style={{ background: "#000" }}
     >
-      <p className="text-[12px] text-white/55 italic tracking-[-0.1px] leading-[1.7] max-w-[760px]">
+      <p className="text-[12px] text-white/55 italic tracking-[-0.1px] leading-[1.7] max-w-[760px] mx-auto text-center">
         Menlo Park, CA · Pacific Time ·{" "}
         <svg
           aria-hidden="true"
