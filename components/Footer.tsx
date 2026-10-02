@@ -3,15 +3,18 @@
 export default function Footer() {
   return (
     <footer
-      className="py-8 px-8 flex flex-col gap-3"
+      className="py-6 px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-center md:text-left"
       style={{ background: "#000" }}
     >
-      <p className="text-[12px] text-white/55 italic tracking-[-0.1px] leading-[1.7] max-w-[760px] mx-auto text-center">
+      <span className="text-[11px] text-white/40 tracking-[-0.1px] md:flex-shrink-0">
+        © 2026 Andrea Mastretta
+      </span>
+      <p className="text-[11px] text-white/55 italic tracking-[-0.1px] leading-[1.6] md:flex-1 md:text-center md:px-6">
         Menlo Park, CA · Pacific Time ·{" "}
         <svg
           aria-hidden="true"
-          width="14"
-          height="14"
+          width="13"
+          height="13"
           viewBox="0 0 16 16"
           fill="none"
           stroke="currentColor"
@@ -34,9 +37,32 @@ export default function Footer() {
         </a>
         ), oat milk, light sweetener
       </p>
-      <p className="text-[11px] text-white/35 tracking-[-0.1px]">
-        © 2026 Andrea Mastretta
-      </p>
+      <div className="flex items-center justify-center md:justify-end gap-3 text-[11px] text-white/55 tracking-[-0.1px] md:flex-shrink-0">
+        <a
+          href="mailto:amastretta@hotmail.com"
+          className="hover:text-white transition-colors"
+        >
+          Email
+        </a>
+        <span className="text-white/20">·</span>
+        <a
+          href="https://www.linkedin.com/in/andrea-mastretta/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition-colors"
+        >
+          LinkedIn
+        </a>
+        <span className="text-white/20">·</span>
+        <a
+          href="https://x.com/amastretta1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition-colors"
+        >
+          X
+        </a>
+      </div>
     </footer>
   );
 }
